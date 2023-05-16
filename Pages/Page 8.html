@@ -63,14 +63,14 @@
             </li>
             <li>
               <div class="iocn-link">
-                <a href="Advanced.html">
+                <a href="LoadingAdvanced.html">
                   <i class='bx bx-plug' ></i>
                   <span class="link_name">Advanced</span>
                 </a>
                 <i class='bx bxs-chevron-down arrow' ></i>
               </div>
               <ul class="sub-menu">
-                <li><a class="link_name" href="Advanced.html">Advanced</a></li>
+                <li><a class="link_name" href="LoadingAdvanced.html">Advanced</a></li>
                 <li><a href="https://steamcommunity.com/">Steam</a></li>
                 <li><a href="https://www.wikipedia.org/">WikiPedia</a></li>
               </ul>
@@ -115,10 +115,18 @@
                 <h1><p>World Of Tanks</p></h1>
                 <h3><p>Выигрышные стратегии в WoT сложно реализовать</p></h3>
                 <h4><p>Они требуют большого опыта игры в Танки</p></h4>
-                  <div class="gif">
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjU1NGJjNjU0ZTA0ZjhmNWYwMzY5MzY2ZjZjZDMyMzViMWU5Y2IxMSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/ZEXPfnfSbYixzrmYLe/giphy.gif">
-                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZmZjhkMjVhMDA0YmMyNWI4MGI2YTI1MWE0Y2FjNTQ0OTc2NTIwNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/t7EtQSbDGzvyBfN2Y1/giphy.gif">
+                <div class="masonry-layout">
+                  <div class="masonry-layout__panel">
+                    <div class="masonry-layout__panel-content">
+                      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjU1NGJjNjU0ZTA0ZjhmNWYwMzY5MzY2ZjZjZDMyMzViMWU5Y2IxMSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/ZEXPfnfSbYixzrmYLe/giphy.gif" class="masonry-layout-panel__content--img">
+                    </div>
                   </div>
+                  <div class="masonry-layout__panel">
+                    <div class="masonry-layout__panel-content">
+                      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZmZjhkMjVhMDA0YmMyNWI4MGI2YTI1MWE0Y2FjNTQ0OTc2NTIwNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/t7EtQSbDGzvyBfN2Y1/giphy.gif" class="masonry-layout-panel__content--img"></a>
+                    </div>
+                  </div>  
+                </div>
                 <h4><p>Нужно хорошо ориентироваться на всех местностях</p></h4>
                 <h2><p></p></h2>
             </center>
@@ -184,7 +192,7 @@
         font-family: verdana;
     }
     h2 {
-        padding-top: 120px;
+        padding-top: 180px;
     }
     h3 {
         color: #2c3e50;
@@ -521,5 +529,28 @@
   padding-right: 12%;
   display: flex;
   justify-content: space-between;
+}
+.masonry-layout {
+  column-count: 2;
+  column-gap: 0;
+}
+.masonry-layout__panel {
+  padding: 5px;
+}
+.masonry-layout__panel-content {
+  border-radius: 10px;
+  height: 400x;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.masonry-layout-panel__content--img {
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 0;
+  transition: 1s;
+}
+.masonry-layout-panel__content--img:hover {
+transform: scale(1.15);
 }
 </style>

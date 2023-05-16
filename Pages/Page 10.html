@@ -63,14 +63,14 @@
             </li>
             <li>
               <div class="iocn-link">
-                <a href="Advanced.html">
+                <a href="LoadingAdvanced.html">
                   <i class='bx bx-plug' ></i>
                   <span class="link_name">Advanced</span>
                 </a>
                 <i class='bx bxs-chevron-down arrow' ></i>
               </div>
               <ul class="sub-menu">
-                <li><a class="link_name" href="Advanced.html">Advanced</a></li>
+                <li><a class="link_name" href="LoadingAdvanced.html">Advanced</a></li>
                 <li><a href="https://steamcommunity.com/">Steam</a></li>
                 <li><a href="https://www.wikipedia.org/">WikiPedia</a></li>
               </ul>
@@ -115,6 +115,14 @@
                 <h1><p>Выигрышные стратегии</p></h1>
                 <h3><p>Как итог можно взять в рассчёт то, что выигрышные стратегии не позволяют выигрывать без опыта игры, но они дают преимущество над соперником</p></h3>
                 <h4><p>Но всё же зная выигрышные стратегии вы можете предотвратить атаку на себя или выиграть на ошибке противника</p></h4>
+                <h2><p></p></h2>
+                <div class="masonry-layout">
+                  <div class="masonry-layout__panel">
+                    <div class="masonry-layout__panel-content">
+                      <img src="https://media.tenor.com/VWNeeH_SdIwAAAAC/gta-respect.gif" class="masonry-layout-panel__content--img">
+                    </div>
+                  </div>
+                </div>
                 <h2><p></p></h2>
             </center>
             <div class="container">
@@ -173,10 +181,9 @@
         color: #2d3436;
         font-size: 64px;
         font-family: verdana;
-        padding-top: 250px;
     }
     h2 {
-        padding-top: 240px;
+        padding-top: 100px;
     }
     h3 {
         color: #2c3e50;
@@ -512,5 +519,28 @@
 .link.active {
   color: #fff;
   background: #4070f4;
+}
+.masonry-layout {
+  column-count: 1;
+  column-gap: 0;
+}
+.masonry-layout__panel {
+  padding: 5px;
+}
+.masonry-layout__panel-content {
+  border-radius: 10px;
+  height: 450x;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.masonry-layout-panel__content--img {
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 0;
+  transition: 1s;
+}
+.masonry-layout-panel__content--img:hover {
+transform: scale(1.15);
 }
 </style>

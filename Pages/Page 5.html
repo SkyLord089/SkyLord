@@ -63,14 +63,14 @@
             </li>
             <li>
               <div class="iocn-link">
-                <a href="Advanced.html">
+                <a href="LoadingAdvanced.html">
                   <i class='bx bx-plug' ></i>
                   <span class="link_name">Advanced</span>
                 </a>
                 <i class='bx bxs-chevron-down arrow' ></i>
               </div>
               <ul class="sub-menu">
-                <li><a class="link_name" href="Advanced.html">Advanced</a></li>
+                <li><a class="link_name" href="LoadingAdvanced.html">Advanced</a></li>
                 <li><a href="https://steamcommunity.com/">Steam</a></li>
                 <li><a href="https://www.wikipedia.org/">WikiPedia</a></li>
               </ul>
@@ -114,7 +114,13 @@
             <center>   
                 <h1><p>Шахматы</p></h1>
                 <h3><p>Одной из интересных ловушек в шахматах</p></h3>
-                <video width="600" height="600" preload="auto" loop autoplay muted src="img/Lasker.mp4"></video>
+                <div class="masonry-layout">
+                  <div class="masonry-layout__panel">
+                    <div class="masonry-layout__panel-content">
+                      <video preload="auto" loop autoplay muted src="img/Lasker.mp4" class="masonry-layout-panel__content--img"></video>
+                    </div>
+                  </div>
+                </div>
                 <h4><p>Является "Ловушка Ласкера"</p></h4>
                 <h2><p></p></h2>
             </center>
@@ -180,7 +186,7 @@
         font-family: verdana;
     }
     h2 {
-        padding-top: 60px;
+        padding-top: 180px;
     }
     h3 {
         color: #2c3e50;
@@ -511,5 +517,28 @@
 .link.active {
   color: #fff;
   background: #4070f4;
+}
+.masonry-layout {
+  column-count: 1;
+  column-gap: 0;
+}
+.masonry-layout__panel {
+  padding: 5px;
+}
+.masonry-layout__panel-content {
+  border-radius: 10px;
+  height: 450x;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.masonry-layout-panel__content--img {
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 0;
+  transition: 1s;
+}
+.masonry-layout-panel__content--img:hover {
+transform: scale(1.15);
 }
 </style>
